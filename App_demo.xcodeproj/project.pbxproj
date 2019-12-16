@@ -16,6 +16,9 @@
 		17316B7823A13D13001E51E1 /* UtilityStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17316B7723A13D13001E51E1 /* UtilityStruct.swift */; };
 		17316B7A23A13F3B001E51E1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17316B7923A13F3B001E51E1 /* CustomButton.swift */; };
 		17316B7C23A13F4D001E51E1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17316B7B23A13F4D001E51E1 /* CustomView.swift */; };
+		17E2F39D23A7837A0054D73B /* CustomSmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2F39C23A7837A0054D73B /* CustomSmallButton.swift */; };
+		17E2F39F23A789060054D73B /* Custom_border_blue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2F39E23A789060054D73B /* Custom_border_blue.swift */; };
+		17E2F3A123A789490054D73B /* Custom_border_green.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E2F3A023A789490054D73B /* Custom_border_green.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		17316B7723A13D13001E51E1 /* UtilityStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityStruct.swift; sourceTree = "<group>"; };
 		17316B7923A13F3B001E51E1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		17316B7B23A13F4D001E51E1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		17E2F39C23A7837A0054D73B /* CustomSmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSmallButton.swift; sourceTree = "<group>"; };
+		17E2F39E23A789060054D73B /* Custom_border_blue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_border_blue.swift; sourceTree = "<group>"; };
+		17E2F3A023A789490054D73B /* Custom_border_green.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_border_green.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				17316B7723A13D13001E51E1 /* UtilityStruct.swift */,
 				17316B7923A13F3B001E51E1 /* CustomButton.swift */,
 				17316B7B23A13F4D001E51E1 /* CustomView.swift */,
+				17E2F39C23A7837A0054D73B /* CustomSmallButton.swift */,
+				17E2F39E23A789060054D73B /* Custom_border_blue.swift */,
+				17E2F3A023A789490054D73B /* Custom_border_green.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -173,9 +182,12 @@
 			files = (
 				17316B6423A13C10001E51E1 /* HomeVC.swift in Sources */,
 				17316B6023A13C10001E51E1 /* AppDelegate.swift in Sources */,
+				17E2F39F23A789060054D73B /* Custom_border_blue.swift in Sources */,
 				17316B6223A13C10001E51E1 /* SceneDelegate.swift in Sources */,
+				17E2F3A123A789490054D73B /* Custom_border_green.swift in Sources */,
 				17316B7C23A13F4D001E51E1 /* CustomView.swift in Sources */,
 				17316B7823A13D13001E51E1 /* UtilityStruct.swift in Sources */,
+				17E2F39D23A7837A0054D73B /* CustomSmallButton.swift in Sources */,
 				17316B7A23A13F3B001E51E1 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

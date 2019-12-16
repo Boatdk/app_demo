@@ -53,5 +53,10 @@ class HomeVC: UIViewController {
         @IBAction func handleTapPost2(_ sender: Any) {
             postMethod(endPoint: "http://192.168.4.1/wifiinfo", switchValue: "1", pageValue: "2", responseLabel: responseLabel2)
         }
+    
+    @IBAction func btnTapTest(_ sender: Any) {
+        print("btn activate")
+    }
+    
 }
 
