@@ -203,6 +203,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2As-Ih-fCW" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="30" width="153" height="120"/>
                                                                                 <color key="backgroundColor" red="0.85882352939999995" green="0.87058823529999996" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <connections>
+                                                                                    <action selector="button5_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKx-nL-Dqg"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ภาพรวม" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-1J-F3f">
                                                                                 <rect key="frame" x="11" y="62" width="143" height="57"/>
@@ -260,6 +263,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-R3-7n3" customClass="Custom_border_blue" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button6_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igt-qh-Wci"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_blue" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-Sl-Ppb">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -294,6 +300,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGx-Tl-4Ea" customClass="Custom_border_blue" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button7_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtV-iR-Gpd"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_orange" translatesAutoresizingMaskIntoConstraints="NO" id="tsd-s6-Vk9">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -328,6 +337,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVk-fJ-1hX" customClass="Custom_border_blue" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button8_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQ1-PI-lL6"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_visurlizer" translatesAutoresizingMaskIntoConstraints="NO" id="slu-6e-wex">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -362,6 +374,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-qm-VGm" customClass="Custom_border_blue" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button9_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y8p-bg-KCb"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_computer" translatesAutoresizingMaskIntoConstraints="NO" id="awR-jr-sSU">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -423,6 +438,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PP-7a-118" customClass="Custom_border_green" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button10_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsj-xq-1He"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_blue" translatesAutoresizingMaskIntoConstraints="NO" id="mzc-4e-gR0">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -457,6 +475,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lj-eD-QlR" customClass="Custom_border_green" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button11_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LxL-tj-WBA"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_orange" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-6p-sBq">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -491,6 +512,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsl-WS-8EW" customClass="Custom_border_green" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button12_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ecu-Py-7qK"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_visurlizer" translatesAutoresizingMaskIntoConstraints="NO" id="88P-0f-hxw">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -525,6 +549,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-dP-QhE" customClass="Custom_border_green" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button13_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iy-cn-gfE"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_computer" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-RF-dVh">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -586,6 +613,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-xp-V0Q" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button14_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrn-ph-xuB"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mute" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-0P-qdh">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -620,6 +650,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHj-An-sbP" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button15_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGQ-qK-EzX"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mute" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-pE-0UC">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -654,6 +687,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M91-TM-Kzv" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195.5" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button16_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JoI-ef-kqB"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mute" translatesAutoresizingMaskIntoConstraints="NO" id="yum-FI-JeZ">
                                                                                 <rect key="frame" x="66" y="28" width="79" height="72"/>
@@ -688,6 +724,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-PW-UKN" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="8" y="23" width="195" height="122"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button17_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sS4-g4-zwK"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mute" translatesAutoresizingMaskIntoConstraints="NO" id="Kwz-Qz-4By">
                                                                                 <rect key="frame" x="66" y="28" width="78.5" height="72"/>
@@ -779,6 +818,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-sq-tex" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="22" y="8" width="179" height="84"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button18_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2BX-hq-9Pn"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_monitor1" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-jo-0CH">
                                                                                 <rect key="frame" x="45" y="25" width="130" height="50"/>
@@ -806,6 +848,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvG-mq-MeN" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="22" y="8" width="179" height="84"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button19_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1F5-xJ-B5e"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_monitor2" translatesAutoresizingMaskIntoConstraints="NO" id="N7U-Zt-quL">
                                                                                 <rect key="frame" x="46" y="25" width="130" height="50"/>
@@ -833,6 +878,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZx-C5-7bd" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="22" y="8" width="179" height="84"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button20_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDO-xB-RvW"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_monitor3" translatesAutoresizingMaskIntoConstraints="NO" id="0MY-6X-uDa">
                                                                                 <rect key="frame" x="46" y="25" width="130" height="50"/>
@@ -860,6 +908,9 @@
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjY-Uo-1s0" customClass="CustomButton" customModule="App_demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="22" y="8" width="179" height="84"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <connections>
+                                                                                    <action selector="button21_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4e-ve-upf"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_monitor4" translatesAutoresizingMaskIntoConstraints="NO" id="1yF-r7-ofs">
                                                                                 <rect key="frame" x="46" y="25" width="130" height="50"/>
@@ -931,6 +982,9 @@
                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrU-Qq-cbn" customClass="CustomSmallButton" customModule="App_demo" customModuleProvider="target">
                                                                                                 <rect key="frame" x="5" y="5" width="95" height="99"/>
                                                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <connections>
+                                                                                                    <action selector="button22_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHb-nR-75B"/>
+                                                                                                </connections>
                                                                                             </button>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_selfView" translatesAutoresizingMaskIntoConstraints="NO" id="Vux-f8-hQG">
                                                                                                 <rect key="frame" x="12" y="10" width="83" height="63"/>
@@ -965,6 +1019,9 @@
                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ei-J1-ioT" customClass="CustomSmallButton" customModule="App_demo" customModuleProvider="target">
                                                                                                 <rect key="frame" x="5" y="5" width="95" height="99"/>
                                                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                <connections>
+                                                                                                    <action selector="button23_DidTAp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKf-Lw-Iqo"/>
+                                                                                                </connections>
                                                                                             </button>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ควบคุมกล้องต้นทาง/ปลายทาง" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPx-vX-vCU">
                                                                                                 <rect key="frame" x="5" y="30" width="95" height="39"/>
@@ -1008,6 +1065,9 @@
                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zh1-aY-aDg" customClass="CustomSmallButton" customModule="App_demo" customModuleProvider="target">
                                                                                                 <rect key="frame" x="5" y="5" width="95" height="99"/>
                                                                                                 <color key="backgroundColor" red="0.95023001269999996" green="0.95023001269999996" blue="0.95023001269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                                <connections>
+                                                                                                    <action selector="button24_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTw-VW-qMI"/>
+                                                                                                </connections>
                                                                                             </button>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_speaker_mute" translatesAutoresizingMaskIntoConstraints="NO" id="RoV-ac-0Fo">
                                                                                                 <rect key="frame" x="11" y="8" width="83" height="63"/>
@@ -1043,6 +1103,9 @@
                                                                                                 <rect key="frame" x="5" y="5" width="95" height="99"/>
                                                                                                 <color key="backgroundColor" red="0.95023001269999996" green="0.95023001269999996" blue="0.95023001269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                                <connections>
+                                                                                                    <action selector="button25_DidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MD9-sR-c1w"/>
+                                                                                                </connections>
                                                                                             </button>
                                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mute" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-Pk-bbD">
                                                                                                 <rect key="frame" x="8" y="8" width="89" height="70"/>
