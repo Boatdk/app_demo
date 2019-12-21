@@ -46,43 +46,76 @@ class HomeVC: UIViewController {
     var stu_btn25 = false
     
     //MARK: - section Orange
-    @IBOutlet weak var button1: CustomButton!
-    @IBOutlet weak var button2: CustomButton!
-    @IBOutlet weak var button3: CustomButton!
-    @IBOutlet weak var button4: CustomButton!
-    @IBOutlet weak var button5: CustomButton!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    @IBOutlet weak var button5: UIButton!
+    
+    @IBOutlet weak var pressedBtn1: UIImageView!
+    @IBOutlet weak var pressedBtn2: UIImageView!
+    @IBOutlet weak var pressedBtn3: UIImageView!
+    @IBOutlet weak var pressedBtn4: UIImageView!
+    @IBOutlet weak var pressedBtn5: UIImageView!
     
     //MARK: - section Blue
-    @IBOutlet weak var button6: Custom_border_blue!
-    @IBOutlet weak var button7: Custom_border_blue!
-    @IBOutlet weak var button8: Custom_border_blue!
-    @IBOutlet weak var button9: Custom_border_blue!
+    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var button8: UIButton!
+    @IBOutlet weak var button9: UIButton!
+    
+    @IBOutlet weak var pressedBtn6: UIImageView!
+    @IBOutlet weak var pressedBtn7: UIImageView!
+    @IBOutlet weak var pressedBtn8: UIImageView!
+    @IBOutlet weak var pressedBtn9: UIImageView!
+    
     
     //MARK: - section Green
-    @IBOutlet weak var button10: Custom_border_green!
-    @IBOutlet weak var button11: Custom_border_green!
-    @IBOutlet weak var button12: Custom_border_green!
-    @IBOutlet weak var button13: Custom_border_green!
+    @IBOutlet weak var button10: UIButton!
+    @IBOutlet weak var button11: UIButton!
+    @IBOutlet weak var button12: UIButton!
+    @IBOutlet weak var button13: UIButton!
+    
+    @IBOutlet weak var pressBtn10: UIImageView!
+    @IBOutlet weak var pressBtn11: UIImageView!
+    @IBOutlet weak var pressBtn12: UIImageView!
+    @IBOutlet weak var pressBtn13: UIImageView!
     
     //MARK: - section Red
-    @IBOutlet weak var button14: CustomButton!
-    @IBOutlet weak var button15: CustomButton!
-    @IBOutlet weak var button16: CustomButton!
-    @IBOutlet weak var button17: CustomButton!
+    @IBOutlet weak var button14: UIButton!
+    @IBOutlet weak var button15: UIButton!
+    @IBOutlet weak var button16: UIButton!
+    @IBOutlet weak var button17: UIButton!
+    
+    @IBOutlet weak var pressBtn14: UIImageView!
+    @IBOutlet weak var pressBtn15: UIImageView!
+    @IBOutlet weak var pressBtn16: UIImageView!
+    @IBOutlet weak var pressBtn17: UIImageView!
     
     //MARK: - section Yellow
-    @IBOutlet weak var button18: CustomButton!
-    @IBOutlet weak var button19: CustomButton!
-    @IBOutlet weak var button20: CustomButton!
-    @IBOutlet weak var button21: CustomButton!
+    @IBOutlet weak var button18: UIButton!
+    @IBOutlet weak var button19: UIButton!
+    @IBOutlet weak var button20: UIButton!
+    @IBOutlet weak var button21: UIButton!
+    
+    @IBOutlet weak var pressBtn18: UIImageView!
+    @IBOutlet weak var pressBtn19: UIImageView!
+    @IBOutlet weak var pressBtn20: UIImageView!
+    @IBOutlet weak var pressBtn21: UIImageView!
     
     //MARK: - section Violet
-    @IBOutlet weak var button22: CustomSmallButton!
-    @IBOutlet weak var button23: CustomSmallButton!
+    @IBOutlet weak var button22: UIButton!
+    @IBOutlet weak var button23: UIButton!
+    
+    @IBOutlet weak var pressBtn22: UIImageView!
+    @IBOutlet weak var pressBtn23: UIImageView!
     
     //MARK: - section Grey
-    @IBOutlet weak var button24: CustomSmallButton!
-    @IBOutlet weak var button25: CustomSmallButton!
+    @IBOutlet weak var button24: UIButton!
+    @IBOutlet weak var button25: UIButton!
+    
+    @IBOutlet weak var pressBtn24: UIImageView!
+    @IBOutlet weak var pressBtn25: UIImageView!
     
     //MARK: - section Volume Contorl
     @IBOutlet weak var volumeContorl: UISlider!
@@ -90,6 +123,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
             initalStatus()
+        volumeContorl.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI_2))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -110,18 +144,23 @@ class HomeVC: UIViewController {
         
         //section ORANGE
         postMethod(endPoint: endPoint, switchValue: "1", pageValue: "1", stuValue: "1")
+        pressedBtn1.image = UIImage(named: "oorage1")
         
         //section BLUE
         postMethod(endPoint: endPoint, switchValue: "6", pageValue: "1", stuValue: "1")
+        pressedBtn6.image = UIImage(named: "pressBlue1")
         
         //section GREEN
         postMethod(endPoint: endPoint, switchValue: "10", pageValue: "1", stuValue: "1")
+        pressBtn10.image = UIImage(named: "pressGreen1")
         
         //section RED
         postMethod(endPoint: endPoint, switchValue: "14", pageValue: "1", stuValue: "1")
+        pressBtn14.image = UIImage(named: "pressRed1")
         
         //section YELLOW
         postMethod(endPoint: endPoint, switchValue: "18", pageValue: "1", stuValue: "1")
+        pressBtn18.image = UIImage(named: "pressYellow1")
     }
         
     private func postMethod(endPoint: String,switchValue: String, pageValue: String, stuValue: String ) {
@@ -139,10 +178,6 @@ class HomeVC: UIViewController {
                 if let data = data {
                     do {
                           print(data)
-//                        let res = try JSONDecoder().decode(passingVariable.self, from: data)
-//                        print(res.page)
-//                        DispatchQueue.main.async {
-//                        }
                     } catch {
                         print(error)
                     }
@@ -156,6 +191,9 @@ class HomeVC: UIViewController {
     @IBAction func button1_DidTap(_ sender: Any) {
         if stu_btn1 == false {
             postMethod(endPoint: endPoint, switchValue: "1", pageValue: "1", stuValue: "1")
+            
+            pressedBtn1.image = UIImage(named: "orange1")
+            
             stu_btn1 = true
             stu_btn2 = false
             stu_btn3 = false
@@ -165,6 +203,9 @@ class HomeVC: UIViewController {
         
         else if stu_btn1 == true {
             postMethod(endPoint: endPoint, switchValue: "1", pageValue: "1", stuValue: "0")
+            
+            pressedBtn1.image = UIImage(named: "oorage1")
+            
             stu_btn1 = false
             stu_btn2 = false
             stu_btn3 = false
@@ -179,6 +220,8 @@ class HomeVC: UIViewController {
             stu_btn2 = true
             postMethod(endPoint: endPoint, switchValue: "2", pageValue: "1", stuValue: "1")
             
+            pressedBtn2.image = UIImage(named: "orange2")
+            
             stu_btn1 = false
             stu_btn3 = false
             stu_btn4 = false
@@ -187,6 +230,9 @@ class HomeVC: UIViewController {
     
         else if stu_btn2 == true {
             postMethod(endPoint: endPoint, switchValue: "2", pageValue: "1", stuValue: "0")
+            
+            pressedBtn2.image = UIImage(named: "oorage2")
+            
             stu_btn1 = false
             stu_btn2 = false
             stu_btn3 = false
@@ -204,6 +250,8 @@ class HomeVC: UIViewController {
             stu_btn2 = false
             stu_btn4 = false
             stu_btn5 = false
+            
+            pressedBtn3.image = UIImage(named: "orange3")
         }
         
         else if stu_btn3 == true {
@@ -213,6 +261,8 @@ class HomeVC: UIViewController {
             stu_btn3 = false
             stu_btn4 = false
             stu_btn5 = false
+            
+            pressedBtn3.image = UIImage(named: "oorage3")
         }
     }
     
@@ -225,6 +275,8 @@ class HomeVC: UIViewController {
             stu_btn2 = false
             stu_btn3 = false
             stu_btn5 = false
+            
+            pressedBtn4.image = UIImage(named: "orange4")
         }
                
         else if stu_btn4 == true {
@@ -235,6 +287,8 @@ class HomeVC: UIViewController {
             stu_btn3 = false
             stu_btn4 = false
             stu_btn5 = false
+            
+            pressedBtn4.image = UIImage(named: "oorage4")
         }
     }
     
@@ -247,6 +301,8 @@ class HomeVC: UIViewController {
                 stu_btn2 = false
                 stu_btn3 = false
                 stu_btn4 = false
+            
+            pressedBtn5.image = UIImage(named: "oorage5")
             }
         
             else if stu_btn5 == true {
@@ -256,6 +312,8 @@ class HomeVC: UIViewController {
                 stu_btn3 = false
                 stu_btn4 = false
                 stu_btn5 = false
+            
+            pressedBtn5.image = UIImage(named: "oorage5")
             }
         }
     
@@ -265,10 +323,14 @@ class HomeVC: UIViewController {
         if stu_btn6 == false {
             stu_btn6 = true
             postMethod(endPoint: endPoint, switchValue: "6", pageValue: "1", stuValue: "1")
+            pressedBtn6.image = UIImage(named: "blue1")
         }
                
         else if stu_btn6 == true {
             postMethod(endPoint: endPoint, switchValue: "6", pageValue: "1", stuValue: "0")
+            
+            pressedBtn6.image = UIImage(named: "pressBlue1")
+            
             stu_btn6 = false
         }
     }
@@ -278,10 +340,15 @@ class HomeVC: UIViewController {
         if stu_btn7 == false {
             stu_btn7 = true
             postMethod(endPoint: endPoint, switchValue: "7", pageValue: "1", stuValue: "1")
+            
+            pressedBtn7.image = UIImage(named: "blue2")
         }
                       
         else if stu_btn7 == true {
             postMethod(endPoint: endPoint, switchValue: "7", pageValue: "1", stuValue: "0")
+            
+            pressedBtn7.image = UIImage(named: "pressBlue2")
+            
             stu_btn7 = false
         }
     }
@@ -291,11 +358,14 @@ class HomeVC: UIViewController {
         if stu_btn8 == false {
             stu_btn8 = true
             postMethod(endPoint: endPoint, switchValue: "8", pageValue: "1", stuValue: "1")
+            pressedBtn8.image = UIImage(named: "blue3")
         }
                       
         else if stu_btn8 == true {
             postMethod(endPoint: endPoint, switchValue: "8", pageValue: "1", stuValue: "0")
             stu_btn8 = false
+            
+            pressedBtn8.image = UIImage(named: "pressBlue3")
         }
     }
     
@@ -304,11 +374,13 @@ class HomeVC: UIViewController {
         if stu_btn9 == false {
             stu_btn9 = true
             postMethod(endPoint: endPoint, switchValue: "9", pageValue: "1", stuValue: "1")
+             pressedBtn9.image = UIImage(named: "blue4")
         }
                       
         else if stu_btn9 == true {
             postMethod(endPoint: endPoint, switchValue: "9", pageValue: "1", stuValue: "0")
             stu_btn9 = false
+            pressedBtn9.image = UIImage(named: "pressBlue4")
         }
     }
     
@@ -318,11 +390,13 @@ class HomeVC: UIViewController {
         if stu_btn10 == false {
             stu_btn10 = true
             postMethod(endPoint: endPoint, switchValue: "10", pageValue: "1", stuValue: "1")
+            pressBtn10.image = UIImage(named: "green1")
         }
                       
         else if stu_btn10 == true {
             postMethod(endPoint: endPoint, switchValue:"10", pageValue: "1", stuValue: "0")
             stu_btn10 = false
+            pressBtn10.image = UIImage(named: "pressGreen1")
         }
     }
     
@@ -331,11 +405,13 @@ class HomeVC: UIViewController {
         if stu_btn11 == false {
             stu_btn11 = true
             postMethod(endPoint: endPoint, switchValue: "11", pageValue: "1", stuValue: "1")
+            pressBtn11.image = UIImage(named: "green2")
         }
                       
         else if stu_btn11 == true {
             postMethod(endPoint: endPoint, switchValue:"11", pageValue: "1", stuValue: "0")
             stu_btn11 = false
+            pressBtn11.image = UIImage(named: "pressGreen2")
         }
     }
     
@@ -344,11 +420,13 @@ class HomeVC: UIViewController {
         if stu_btn12 == false {
             stu_btn12 = true
             postMethod(endPoint: endPoint, switchValue: "12", pageValue: "1", stuValue: "1")
+            pressBtn12.image = UIImage(named: "green3")
         }
                       
         else if stu_btn12 == true {
             postMethod(endPoint: endPoint, switchValue:"12", pageValue: "1", stuValue: "0")
             stu_btn12 = false
+            pressBtn12.image = UIImage(named: "pressGreen3")
         }
     }
     
@@ -357,11 +435,13 @@ class HomeVC: UIViewController {
         if stu_btn13 == false {
             stu_btn13 = true
             postMethod(endPoint: endPoint, switchValue: "13", pageValue: "1", stuValue: "1")
+            pressBtn13.image = UIImage(named: "green4")
         }
                       
         else if stu_btn13 == true {
             postMethod(endPoint: endPoint, switchValue:"13", pageValue: "1", stuValue: "0")
             stu_btn13 = false
+            pressBtn13.image = UIImage(named: "pressGreen4")
         }
     }
     
@@ -371,11 +451,13 @@ class HomeVC: UIViewController {
         if stu_btn14 == false {
             stu_btn14 = true
             postMethod(endPoint: endPoint, switchValue: "14", pageValue: "1", stuValue: "1")
+            pressBtn14.image = UIImage(named: "red1")
         }
                       
         else if stu_btn14 == true {
             postMethod(endPoint: endPoint, switchValue:"14", pageValue: "1", stuValue: "0")
             stu_btn14 = false
+            pressBtn14.image = UIImage(named: "pressRed1")
         }
     }
     
@@ -384,11 +466,13 @@ class HomeVC: UIViewController {
         if stu_btn15 == false {
             stu_btn15 = true
             postMethod(endPoint: endPoint, switchValue: "15", pageValue: "1", stuValue: "1")
+            pressBtn15.image = UIImage(named: "red2")
         }
                       
         else if stu_btn15 == true {
             postMethod(endPoint: endPoint, switchValue:"15", pageValue: "1", stuValue: "0")
             stu_btn15 = false
+            pressBtn15.image = UIImage(named: "pressRed2")
         }
     }
     
@@ -397,11 +481,13 @@ class HomeVC: UIViewController {
         if stu_btn16 == false {
             stu_btn16 = true
             postMethod(endPoint: endPoint, switchValue: "16", pageValue: "1", stuValue: "1")
+            pressBtn16.image = UIImage(named: "red3")
         }
                       
         else if stu_btn16 == true {
             postMethod(endPoint: endPoint, switchValue:"16", pageValue: "1", stuValue: "0")
             stu_btn16 = false
+            pressBtn16.image = UIImage(named: "pressRed3")
         }
     }
     
@@ -410,15 +496,17 @@ class HomeVC: UIViewController {
         if stu_btn17 == false {
             stu_btn17 = true
             postMethod(endPoint: endPoint, switchValue: "17", pageValue: "1", stuValue: "1")
+            pressBtn17.image = UIImage(named: "red4")
         }
                       
         else if stu_btn17 == true {
             postMethod(endPoint: endPoint, switchValue:"17", pageValue: "1", stuValue: "0")
             stu_btn17 = false
+            pressBtn17.image = UIImage(named: "pressRed4")
         }
     }
     
-    //Handle DidTap section YELLOW
+    //MARK:- Handle DidTap section YELLOW
     //btn18
     @IBAction func button18_DidTap(_ sender: Any) {
         if stu_btn18 == false {
@@ -428,6 +516,8 @@ class HomeVC: UIViewController {
             stu_btn19 = false
             stu_btn20 = false
             stu_btn21 = false
+            
+            pressBtn18.image = UIImage(named: "yellow1")
         }
         
         else if stu_btn18 == true {
@@ -436,6 +526,8 @@ class HomeVC: UIViewController {
             stu_btn19 = false
             stu_btn20 = false
             stu_btn21 = false
+            
+            pressBtn18.image = UIImage(named: "pressYellow1")
         }
     }
     
@@ -448,6 +540,8 @@ class HomeVC: UIViewController {
             stu_btn18 = false
             stu_btn20 = false
             stu_btn21 = false
+            
+            pressBtn19.image = UIImage(named: "yellow2")
         }
         
         else if stu_btn19 == true {
@@ -457,6 +551,7 @@ class HomeVC: UIViewController {
             stu_btn20 = false
             stu_btn21 = false
   
+            pressBtn19.image = UIImage(named: "pressYellow2")
         }
     }
     
@@ -469,6 +564,8 @@ class HomeVC: UIViewController {
            stu_btn18 = false
            stu_btn19 = false
            stu_btn21 = false
+        
+            pressBtn20.image = UIImage(named: "yellow3")
         }
               
         else if stu_btn20 == true {
@@ -478,6 +575,7 @@ class HomeVC: UIViewController {
             stu_btn20 = false
             stu_btn21 = false
         
+            pressBtn20.image = UIImage(named: "pressYellow3")
         }
     }
     
@@ -490,6 +588,8 @@ class HomeVC: UIViewController {
            stu_btn18 = false
            stu_btn19 = false
            stu_btn20 = false
+            
+            pressBtn21.image = UIImage(named: "yellow4")
         }
               
         else if stu_btn21 == true {
@@ -498,6 +598,8 @@ class HomeVC: UIViewController {
             stu_btn19 = false
             stu_btn20 = false
             stu_btn21 = false
+            
+            pressBtn21.image = UIImage(named: "pressYellow4")
         
         }
     }
@@ -509,12 +611,15 @@ class HomeVC: UIViewController {
             postMethod(endPoint: endPoint, switchValue: "22", pageValue: "1", stuValue: "0")
             stu_btn22 = true
             stu_btn23 = false
+            pressBtn22.image = UIImage(named: "violet1")
         }
         
         else if stu_btn22 == true {
             postMethod(endPoint: endPoint, switchValue: "22", pageValue: "1", stuValue: "1")
             stu_btn22 = false
             stu_btn23 = false
+            
+            pressBtn22.image = UIImage(named: "pressViolet1")
         }
     }
     
@@ -524,12 +629,14 @@ class HomeVC: UIViewController {
             postMethod(endPoint: endPoint, switchValue: "23", pageValue: "1", stuValue: "1")
             stu_btn22 = false
             stu_btn23 = true
+            pressBtn23.image = UIImage(named: "violet2")
         }
         
         else if stu_btn23 == true {
             postMethod(endPoint: endPoint, switchValue: "23", pageValue: "2", stuValue: "2")
             stu_btn22 = false
             stu_btn23 = false
+            pressBtn23.image = UIImage(named: "pressViolet2")
         }
     }
     
@@ -541,12 +648,14 @@ class HomeVC: UIViewController {
             postMethod(endPoint: endPoint, switchValue: "24", pageValue: "1", stuValue: "1")
             stu_btn24 = true
             stu_btn25 = false
+            pressBtn24.image = UIImage(named: "grey1")
         }
         
         else if stu_btn24 == true {
             postMethod(endPoint: endPoint, switchValue: "24", pageValue: "1", stuValue: "0")
             stu_btn24 = false
             stu_btn25 = false
+            pressBtn24.image = UIImage(named: "pressGrey1")
         }
     }
     
@@ -556,12 +665,14 @@ class HomeVC: UIViewController {
             postMethod(endPoint: endPoint, switchValue: "25", pageValue: "1", stuValue: "1")
             stu_btn25 = true
             stu_btn24 = false
+            pressBtn25.image = UIImage(named: "grey2")
         }
         
         else if stu_btn25 == true {
             postMethod(endPoint: endPoint, switchValue: "25", pageValue: "1", stuValue: "0")
             stu_btn24 = false
             stu_btn25 = false
+            pressBtn25.image = UIImage(named: "pressGrey2")
         }
     }
 }
