@@ -893,10 +893,13 @@
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MDh-9U-aZl" customClass="CustomView" customModule="App_demo" customModuleProvider="target">
                                                                                         <rect key="frame" x="165" y="0.0" width="146" height="271"/>
                                                                                         <subviews>
-                                                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-Yv-7gH">
+                                                                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-Yv-7gH">
                                                                                                 <rect key="frame" x="-66" y="99" width="186" height="30"/>
                                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                                 <color key="tintColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                <connections>
+                                                                                                    <action selector="sliderVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="mZL-tp-sev"/>
+                                                                                                </connections>
                                                                                             </slider>
                                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml7-t2-Nfi">
                                                                                                 <rect key="frame" x="43" y="8" width="64" height="35"/>
