@@ -679,19 +679,6 @@ class HomeVC: UIViewController {
     
     //btn23
     @IBAction func button23_DidTAp(_ sender: Any) {
-//        if stu_btn23 == false {
-//            postMethod(endPoint: endPoint, switchValue: "23", pageValue: "1", stuValue: "1")
-//            stu_btn22 = false
-//            stu_btn23 = true
-//            pressBtn23.image = UIImage(named: "violet2")
-//        }
-//
-//        else if stu_btn23 == true {
-//            postMethod(endPoint: endPoint, switchValue: "23", pageValue: "2", stuValue: "2")
-//            stu_btn22 = false
-//            stu_btn23 = false
-//            pressBtn23.image = UIImage(named: "pressViolet2")
-//        }
         
         if stu_btn23 == false {
             self.pageValue = "2"
@@ -741,7 +728,7 @@ class HomeVC: UIViewController {
         }
     }
     
-    //volume control
+    //volume control (btn26)
     @IBAction func sliderVolume(_ sender: UISlider) {
         let stu = String(sender.value)
         postMethod(endPoint: endPoint, switchValue: "26", pageValue: pageValue, stuValue: stu)

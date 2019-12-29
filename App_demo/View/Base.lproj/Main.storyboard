@@ -1139,6 +1139,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmTap:" destination="1cM-h7-h1c" eventType="touchUpInside" id="fca-jI-2Xd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1160,6 +1163,10 @@
                         <viewLayoutGuide key="safeArea" id="70n-p9-Krb"/>
                     </view>
                     <navigationItem key="navigationItem" id="eOi-bq-ua8"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="CIO-GK-LLR" id="pgQ-up-9Lr"/>
+                        <outlet property="ssidTextField" destination="rxI-WL-v7S" id="cbo-zP-r15"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHq-4S-b2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="IZi-vO-4B3" userLabel="Exit" sceneMemberID="exit"/>
